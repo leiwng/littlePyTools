@@ -14,13 +14,19 @@ if __name__ == '__main__':
     sorted_filtered_files = sorted(filtered_files,  key=lambda x: os.path.getmtime(os.path.join(dir, x)), reverse = True)
 
     # starting from 2014-01 to 2017-11, 12x4-1=47
-    # ok, start to rename
+    # ok, start to rename.
+    # src example:          eStatement_1599540611065.pdf
+    # chg to:          20-08eStatement_1599540611065.pdf
+
     year = 2014
     month = 1
+
     for file in sorted_filtered_files:
         year_str = str(year)[2 : ]
+
         mon_str = str(month)
         mon_str = mon_str.zfill(2)
+
         prefix_str = year_str + '-' + mon_str
 
         new_file_name = os.path.join(dir, prefix_str+file)
