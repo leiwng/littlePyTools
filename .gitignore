@@ -9,6 +9,7 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
+namingPicBySlideNumber/test_data
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
