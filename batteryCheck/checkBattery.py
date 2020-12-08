@@ -44,10 +44,12 @@ if __name__ == "__main__":
 
   if not plugged and percent < BAT_LCL:
     beep4plug()
-    win32api.MessageBox(0, "请立即插入电源！", "警告",win32con.MB_ICONWARNING)
+    msg = '请立即插入电源！电量：{}%。'.format(percent)
+    win32api.MessageBox(0, msg, "警告",win32con.MB_ICONWARNING)
 
   if plugged and percent > BAT_UCL:
     beep4unplug()
-    win32api.MessageBox(0, "请立即拔掉电源！", "警告",win32con.MB_ICONWARNING)
+    msg = '请立即拔掉电源！电量：{}%。'.format(percent)
+    win32api.MessageBox(0, msg, "警告",win32con.MB_ICONWARNING)
 
 
