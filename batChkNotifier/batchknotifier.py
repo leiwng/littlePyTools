@@ -17,6 +17,10 @@ TODO:
 """
 
 
+import os
+import psutil
+import winsound
+# import win32api, win32con
 from win10toast import ToastNotifier
 
 BAT_LCL = 35
@@ -42,13 +46,20 @@ if __name__ == "__main__":
 
   n = ToastNotifier()
 
+  ico_dir = r'.\\'
+  plugin_ico ='plugin.ico'
+  plugout_ico ='plugout.ico'
+
   if not plugged and percent < BAT_LCL:
     beep4plug()
     msg = '请立即插入电源！电量：{}%。'.format(percent)
-    n.show_toast("警告", msg, duration=10, icon_path=)
-    win32api.MessageBox(0, msg, "警告",win32con.MB_ICONWARNING)
+    ico_path = os.path.join(ico_dir,plugin_ico)
+    n.show_toast("警告", msg, duration=10, icon_path=ico_path)
+    # win32api.MessageBox(0, msg, "警告",win32con.MB_ICONWARNING)
 
   if plugged and percent > BAT_UCL:
     beep4unplug()
     msg = '请立即拔掉电源！电量：{}%。'.format(percent)
-    win32api.MessageBox(0, msg, "警告",win32con.MB_ICONWARNING)
+    ico_path = os.path.join(ico_dir,plugout_ico)
+    n.show_toast("警告", msg, duration=10, icon_path=ico_path)
+    # win32api.MessageBox(0, msg, "警告",win32con.MB_ICONWARNING)
