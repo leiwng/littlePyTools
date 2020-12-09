@@ -16,16 +16,14 @@
 TODO:
 """
 
-
 import os
 import psutil
 import winsound
 # import win32api, win32con
-from win10toast import ToastNotifier
+from plyer import notification
 
 BAT_LCL = 35
 BAT_UCL = 85
-
 
 def beep4plug():
   duration = 1000  # millisecond
@@ -44,8 +42,6 @@ if __name__ == "__main__":
   plugged = battery.power_plugged
   percent = battery.percent
 
-  n = ToastNotifier()
-
   ico_dir = r'D:\Prj\littlePyTools\batChkNotifier'
   plugin_ico ='plugin.ico'
   plugout_ico ='plugout.ico'
@@ -54,7 +50,8 @@ if __name__ == "__main__":
     beep4plug()
     msg = '请立即插入电源！电量：{}%。'.format(percent)
     ico_path = os.path.join(ico_dir,plugin_ico)
-    n.show_toast("警告", msg, duration=10, icon_path=ico_path)
+    notification.notify(title='警告', message=msg, app_icon=ico_path, timeout=10)
+    # n.show_toast("警告", msg, duration=10, icon_path=ico_path)
     # win32api.MessageBox(0, msg, "警告",win32con.MB_ICONWARNING)
     # print('plugin')
 
@@ -62,7 +59,8 @@ if __name__ == "__main__":
     beep4unplug()
     msg = '请立即拔掉电源！电量：{}%。'.format(percent)
     ico_path = os.path.join(ico_dir,plugout_ico)
-    n.show_toast("警告", msg, duration=10, icon_path=ico_path)
+    notification.notify(title='警告', message=msg, app_icon=ico_path, timeout=10)
+    # n.show_toast("警告", msg, duration=10, icon_path=ico_path)
     # win32api.MessageBox(0, msg, "警告",win32con.MB_ICONWARNING)
     # print('plugout')
     # print(ico_path)
