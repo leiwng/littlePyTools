@@ -15,8 +15,10 @@ if __name__ == '__main__':
   dest_dir = r'D:\OneDrive\图片\桌面背景'
 
   # 打开记录已经转存文件的记录文件
-  exist_file_list_file = open(os.path.join(dest_dir,'files_processed.txt'), 'w+')
+  exist_file_list_file = open(os.path.join(dest_dir,'files_processed.txt'), 'r+')
   files_processed = exist_file_list_file.read().splitlines()
+  files_processed = [x for x in files_processed if x != '']
+  print('files_processed: {}'.format(files_processed))
 
   file_copied_cnt = 0
   for src_file in src_files:
