@@ -7,12 +7,15 @@ from PIL import Image
 if __name__ == '__main__':
 
   # Windows10 锁屏图片存储目录
-  src_dir = r'C:\Users\leiwn\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets'
+  # src_dir = r'C:\Users\leiwn\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets'
+  src_dir = r'C:\Users\Raymond.Wong\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets'
+
   # 目录下的文件名列表
   src_files = os.listdir(src_dir)
 
   # 图片转存目录
-  dest_dir = r'D:\OneDrive\图片\桌面背景'
+  # dest_dir = r'D:\OneDrive\图片\桌面背景'
+  dest_dir = r'D:\oneDrive\bizOutlook\OneDrive\图片\桌面背景'
 
   # 打开记录已经转存文件的记录文件
   exist_file_list_file = open(os.path.join(dest_dir,'files_processed.txt'), 'r+')
@@ -49,7 +52,7 @@ if __name__ == '__main__':
 
       img.close()
 
-  if files_processed:
+  if files_processed and file_copied_cnt > 0 :
 
     # 清空原文件处理记录文件
     exist_file_list_file.seek(0)
