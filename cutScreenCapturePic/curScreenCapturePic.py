@@ -20,8 +20,9 @@ def main():
 
   idx = 1
   for src_file in src_files:
-    if os.path.isfile(src_file):
-      fullpath = os.path.join(src_dir, src_file)
+    fullpath = os.path.join(src_dir, src_file)
+    if os.path.isfile(fullpath):
+
       img = Image.open(fullpath)
 
       (src_file_name, src_file_ext) = os.path.splitext(src_file)
