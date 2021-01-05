@@ -21,7 +21,7 @@ if __name__ == '__main__':
   exist_file_list_file = open(os.path.join(dest_dir,'files_processed.txt'), 'r+')
   files_processed = exist_file_list_file.read().splitlines()
   files_processed = [x for x in files_processed if x != '']
-  print('files_processed: {}'.format(files_processed))
+  # print('files_processed: {}'.format(files_processed))
 
   file_copied_cnt = 0
   for src_file in src_files:
