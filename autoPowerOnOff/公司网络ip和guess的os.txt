@@ -1,0 +1,579 @@
+Nmap scan report for 192.168.0.22
+Nmap scan report for 192.168.0.31
+Nmap scan report for 192.168.0.32
+Nmap scan report for 192.168.0.33
+Nmap scan report for 192.168.0.46 
+? Nmap scan report for ESP_18B63F.lan (192.168.0.52)
+Nmap scan report for 192.168.0.107
+? Nmap scan report for b4fbe457b669.lan (192.168.0.141)
+Nmap scan report for WIN-20140913YTN.lan (192.168.0.147)
+Nmap scan report for 1.lan (192.168.0.171)
+Nmap scan report for 192.168.0.197
+
+$ ./osGuess.sh
+
+Starting Nmap 6.40 ( http://nmap.org ) at 2020-12-31 11:00 CST
+WARNING: RST from 192.168.0.97 port 88 -- is this port really open?
+WARNING: RST from 192.168.0.97 port 88 -- is this port really open?
+WARNING: RST from 192.168.0.97 port 88 -- is this port really open?
+WARNING: RST from 192.168.0.163 port 88 -- is this port really open?
+WARNING: RST from 192.168.0.97 port 88 -- is this port really open?
+WARNING: RST from 192.168.0.163 port 88 -- is this port really open?
+WARNING: RST from 192.168.0.163 port 88 -- is this port really open?
+WARNING: RST from 192.168.0.163 port 88 -- is this port really open?
+WARNING: RST from 192.168.0.97 port 88 -- is this port really open?
+WARNING: RST from 192.168.0.163 port 88 -- is this port really open?
+WARNING: RST from 192.168.0.97 port 88 -- is this port really open?
+WARNING: RST from 192.168.0.163 port 88 -- is this port really open?
+Nmap scan report for OpenWrt.lan (192.168.0.1)
+Host is up (0.0049s latency).
+Not shown: 987 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+53/tcp   open  domain
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+179/tcp  open  bgp
+445/tcp  open  microsoft-ds
+1080/tcp open  socks
+1234/tcp open  hotline
+2601/tcp open  zebra
+2605/tcp open  bgpd
+4443/tcp open  pharos
+5000/tcp open  upnp
+MAC Address: 00:E0:67:14:EF:FA (eac Automation-consulting Gmbh)
+Aggressive OS guesses: Linux 2.6.32 - 3.9 (96%), Netgear DG834G WAP or Western Digital WD TV media player (96%), Linux 3.0 - 3.1 (96%), Linux 2.6.9 - 2.6.18 (95%), Linux 2.6.37 (95%), Linux 2.6.18 (95%), Asus RT-N10 router or AXIS 211A Network Camera (Linux 2.6) (95%), AXIS 211A Network Camera (Linux 2.6.20) (95%), Linux 2.6.16 (94%), Linux 2.6.24 (94%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.0.2
+Host is up (0.0052s latency).
+Not shown: 998 closed ports
+PORT      STATE SERVICE
+5009/tcp  open  airport-admin
+10000/tcp open  snet-sensor-mgmt
+MAC Address: 24:A2:E1:E7:DA:E6 (Unknown)
+Device type: general purpose
+Running: NetBSD 5.X
+OS CPE: cpe:/o:netbsd:netbsd:5
+OS details: NetBSD 5.0 - 5.99.5
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.0.8
+Host is up (0.0077s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+80/tcp   open  http
+515/tcp  open  printer
+631/tcp  open  ipp
+8080/tcp open  http-proxy
+8290/tcp open  unknown
+9100/tcp open  jetdirect
+MAC Address: 6C:3B:E5:07:B6:DA (Hewlett Packard)
+Device type: printer
+Running: HP embedded
+OS CPE: cpe:/h:hp:laserjet_cp1025nw cpe:/h:hp:laserjet_1102w cpe:/h:hp:laserjet_m1212nf cpe:/h:hp:laserjet_m1217nfw cpe:/h:hp:laserjet_p1120w cpe:/h:hp:laserjet_p1606dn
+OS details: HP LaserJet CP1025nw, 1102w, M1212nf, M1217nfw, P1120w, or P1606dn printer
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.0.9
+Host is up (0.0041s latency).
+Not shown: 995 closed ports
+PORT     STATE SERVICE
+80/tcp   open  http
+515/tcp  open  printer
+631/tcp  open  ipp
+8080/tcp open  http-proxy
+9100/tcp open  jetdirect
+MAC Address: 34:64:A9:6F:26:65 (Unknown)
+Aggressive OS guesses: HP LaserJet CP2025dn printer (98%), Blackboard transaction system serial-to-IP converter (98%), HP LaserJet M451dn or CP4525 (98%), HP printer: LaserJet CM1312, OfficeJet 6500, Photosmart C510a, or Photosmart B110a (97%), HP LaserJet CM1415fnw, CP1525nw, or 1536dnf printer (97%), HP LaserJet CP2025dn or P2035n printer, or Vocality BASICS Four Wire VoIP gateway (97%), APC AP7900-series power distribution unit (AOS 3.x) (95%), VxWorks (95%), Verizon FiOS DVR or Teradici PCoIP remote management console (95%), HP LaserJet M2727nf or P1505n printer (95%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.0.16
+Host is up (0.0040s latency).
+Not shown: 993 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+111/tcp  open  rpcbind
+179/tcp  open  bgp
+443/tcp  open  https
+8080/tcp open  http-proxy
+9100/tcp open  jetdirect
+MAC Address: 18:A9:05:74:40:53 (Hewlett-Packard Company)
+Aggressive OS guesses: Linux 2.6.32 - 3.9 (96%), Netgear DG834G WAP or Western Digital WD TV media player (95%), Linux 2.6.32 (94%), Linux 3.1 (94%), Linux 3.2 (94%), AXIS 210A or 211 Network Camera (Linux 2.6) (94%), Linux 2.6.32 - 2.6.35 (93%), Linux 2.6.32 - 3.2 (93%), Linux 3.0 - 3.9 (93%), Linux 2.6.32 - 3.6 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.0.19
+Host is up (0.0040s latency).
+Not shown: 990 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+53/tcp   open  domain
+80/tcp   open  http
+81/tcp   open  hosts2-ns
+139/tcp  open  netbios-ssn
+444/tcp  open  snpp
+445/tcp  open  microsoft-ds
+1234/tcp open  hotline
+1688/tcp open  nsjtp-data
+MAC Address: 08:00:27:C7:D3:98 (Cadmus Computer Systems)
+Aggressive OS guesses: Linux 2.6.18 (96%), Linux 2.6.32 - 3.9 (96%), Netgear DG834G WAP or Western Digital WD TV media player (96%), Linux 3.0 - 3.1 (96%), Linux 2.6.9 - 2.6.18 (95%), Linux 2.6.37 (95%), Asus RT-N10 router or AXIS 211A Network Camera (Linux 2.6) (95%), AXIS 211A Network Camera (Linux 2.6.20) (95%), Linux 2.6.16 (94%), Linux 2.6.24 (94%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.0.20
+Host is up (0.0033s latency).
+Not shown: 977 closed ports
+PORT      STATE SERVICE
+22/tcp    open  ssh
+3306/tcp  open  mysql
+7001/tcp  open  afs3-callback
+8080/tcp  open  http-proxy
+32768/tcp open  filenet-tms
+32769/tcp open  filenet-rpc
+32770/tcp open  sometimes-rpc3
+32771/tcp open  sometimes-rpc5
+32772/tcp open  sometimes-rpc7
+32773/tcp open  sometimes-rpc9
+32774/tcp open  sometimes-rpc11
+32775/tcp open  sometimes-rpc13
+32776/tcp open  sometimes-rpc15
+32777/tcp open  sometimes-rpc17
+32778/tcp open  sometimes-rpc19
+32779/tcp open  sometimes-rpc21
+32780/tcp open  sometimes-rpc23
+32781/tcp open  unknown
+32782/tcp open  unknown
+32783/tcp open  unknown
+32784/tcp open  unknown
+32785/tcp open  unknown
+44501/tcp open  unknown
+MAC Address: 00:26:55:87:99:30 (Hewlett-Packard Company)
+Aggressive OS guesses: Linux 2.6.32 - 3.9 (96%), Netgear DG834G WAP or Western Digital WD TV media player (96%), Linux 2.6.32 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6) (94%), Linux 2.6.32 - 2.6.35 (94%), Linux 2.6.32 - 3.2 (94%), Linux 3.0 - 3.9 (93%), Linux 2.6.32 - 3.6 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.0.22
+Host is up (0.0034s latency).
+Not shown: 991 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+53/tcp   open  domain
+80/tcp   open  http
+111/tcp  open  rpcbind
+2049/tcp open  nfs
+3389/tcp open  ms-wbt-server
+5900/tcp open  vnc
+6000/tcp open  X11
+MAC Address: D4:85:64:53:50:2E (Hewlett-Packard Company)
+Aggressive OS guesses: Linux 2.6.32 - 3.9 (96%), Netgear DG834G WAP or Western Digital WD TV media player (96%), Linux 2.6.32 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6) (94%), Linux 2.6.32 - 2.6.35 (94%), Linux 2.6.32 - 3.2 (94%), Linux 3.0 - 3.9 (93%), Linux 2.6.32 - 3.6 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.0.31
+Host is up (0.0037s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+111/tcp  open  rpcbind
+179/tcp  open  bgp
+873/tcp  open  rsync
+2049/tcp open  nfs
+9100/tcp open  jetdirect
+MAC Address: 08:00:27:7C:8F:39 (Cadmus Computer Systems)
+Aggressive OS guesses: Linux 2.6.32 - 3.9 (96%), Netgear DG834G WAP or Western Digital WD TV media player (96%), Linux 2.6.32 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6) (94%), Linux 2.6.32 - 2.6.35 (94%), Linux 2.6.32 - 3.2 (94%), Linux 3.0 - 3.9 (93%), Linux 2.6.32 - 3.6 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.0.32
+Host is up (0.0037s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+111/tcp  open  rpcbind
+179/tcp  open  bgp
+9100/tcp open  jetdirect
+MAC Address: 08:00:27:BB:A7:77 (Cadmus Computer Systems)
+Aggressive OS guesses: Linux 2.6.32 - 3.9 (96%), Netgear DG834G WAP or Western Digital WD TV media player (96%), Linux 2.6.32 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6) (94%), Linux 2.6.32 - 2.6.35 (94%), Linux 2.6.32 - 3.2 (94%), Linux 3.0 - 3.9 (93%), Linux 2.6.32 - 3.6 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.0.33
+Host is up (0.0037s latency).
+Not shown: 995 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+111/tcp  open  rpcbind
+179/tcp  open  bgp
+8081/tcp open  blackice-icecap
+9100/tcp open  jetdirect
+MAC Address: 08:00:27:54:A8:4B (Cadmus Computer Systems)
+Aggressive OS guesses: Linux 2.6.32 - 3.9 (96%), Netgear DG834G WAP or Western Digital WD TV media player (96%), Linux 2.6.32 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6) (94%), Linux 2.6.32 - 2.6.35 (94%), Linux 2.6.32 - 3.2 (94%), Linux 3.0 - 3.9 (93%), Linux 2.6.32 - 3.6 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.0.46
+Host is up (0.0040s latency).
+Not shown: 990 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+111/tcp  open  rpcbind
+139/tcp  open  netbios-ssn
+179/tcp  open  bgp
+445/tcp  open  microsoft-ds
+5999/tcp open  ncd-conf
+8080/tcp open  http-proxy
+8081/tcp open  blackice-icecap
+8888/tcp open  sun-answerbook
+9100/tcp open  jetdirect
+MAC Address: 2C:4D:54:D8:59:C4 (Unknown)
+Aggressive OS guesses: Linux 2.6.32 - 3.9 (96%), Netgear DG834G WAP or Western Digital WD TV media player (96%), Linux 2.6.32 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6) (94%), Linux 2.6.32 - 2.6.35 (94%), Linux 2.6.32 - 3.2 (94%), Linux 3.0 - 3.9 (93%), Linux 2.6.32 - 3.6 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for orientsoft.lan (192.168.0.51)
+Host is up (0.0034s latency).
+Not shown: 998 closed ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+161/tcp open  snmp
+MAC Address: B4:FB:E4:80:7B:97 (Unknown)
+Aggressive OS guesses: Netgear DG834G WAP or Western Digital WD TV media player (96%), Android 4.1.1 (95%), Linux 2.6.32 - 3.9 (95%), Linux 2.6.24 (94%), Linux 2.6.27 - 2.6.28 (93%), Linksys WRV54G WAP (93%), Asus RT-N10 router or AXIS 211A Network Camera (Linux 2.6) (93%), AXIS 211A Network Camera (Linux 2.6.20) (93%), Linux 2.6.22 (embedded, ARM) (93%), Linux 2.6.16 (92%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for ESP_18B63F.lan (192.168.0.52)
+Host is up (0.0089s latency).
+Not shown: 999 closed ports
+PORT     STATE SERVICE
+6668/tcp open  irc
+MAC Address: 24:A1:60:18:B6:3F (Unknown)
+Aggressive OS guesses: 2N Helios IP VoIP doorbell (89%), OpenBox S10 set-top box (89%), Revo Blik Wi-Fi Internet radio (88%), Cognex DataMan 200 ID reader (lwIP TCP/IP stack) (88%), m3 muvid IR 715-2 Internet radio receiver (88%), Roberts STREAM 202 Internet radio (88%), Luminary Micro ARM Evaluation Kit (86%), Netopia 2247 ADSL router (86%), lwIP 1.4.0 lightweight TCP/IP stack (86%), Sandstrom Internet Radio (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for orient.data2.com (192.168.0.61)
+Host is up (0.0048s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+111/tcp  open  rpcbind
+3000/tcp open  ppp
+4001/tcp open  newoak
+5001/tcp open  commplex-link
+8000/tcp open  http-alt
+MAC Address: 08:00:27:CE:43:14 (Cadmus Computer Systems)
+Device type: general purpose
+Running: Linux 2.6.X|3.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3
+OS details: Linux 2.6.32 - 3.9
+Network Distance: 1 hop
+
+Nmap scan report for LeiWangOrientLP001.lan (192.168.0.71)
+Host is up (0.029s latency).
+Not shown: 995 filtered ports
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+5357/tcp open  wsdapi
+6000/tcp open  X11
+MAC Address: D0:57:7B:81:19:1F (Unknown)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2008 (85%)
+OS CPE: cpe:/o:microsoft:windows_server_2008::sp1
+Aggressive OS guesses: Microsoft Windows Server 2008 SP1 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for physerdeMBP.lan (192.168.0.97)
+Host is up (0.010s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE
+88/tcp   open  kerberos-sec
+5900/tcp open  vnc
+MAC Address: AC:BC:32:98:E4:FF (Unknown)
+Device type: media device
+Running: Apple iPhone OS 2.X
+OS CPE: cpe:/o:apple:iphone_os:2
+OS details: Apple iPod touch audio player (iPhone OS 2.2)
+Network Distance: 1 hop
+
+Nmap scan report for MIX2-maoshu.lan (192.168.0.99)
+Host is up (0.088s latency).
+Not shown: 817 closed ports, 182 filtered ports
+PORT      STATE SERVICE
+16080/tcp open  osxwebadmin
+MAC Address: 9C:2E:A1:A7:7E:65 (Unknown)
+Aggressive OS guesses: Netgear DG834G WAP or Western Digital WD TV media player (96%), Linux 2.6.32 - 3.9 (95%), Linux 3.1 (93%), Linux 3.2 (93%), AXIS 210A or 211 Network Camera (Linux 2.6) (92%), Android 4.0.3 - 4.0.4 (Linux 3.0) (92%), Linux 2.6.32 - 2.6.35 (92%), Linux 2.6.32 - 3.2 (92%), HP P2000 G3 NAS device (92%), Linux 2.6.32 (92%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for huangdegaodeMBP.lan (192.168.0.103)
+Host is up (0.048s latency).
+All 1000 scanned ports on huangdegaodeMBP.lan (192.168.0.103) are closed
+MAC Address: 4C:32:75:99:A0:5F (Unknown)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for XD-LAPTOP.lan (192.168.0.106)
+Host is up (0.027s latency).
+Not shown: 993 filtered ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+554/tcp   open  rtsp
+2869/tcp  open  icslap
+5357/tcp  open  wsdapi
+10243/tcp open  unknown
+MAC Address: 40:E2:30:03:F6:F1 (Unknown)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 7|2008 (85%)
+OS CPE: cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_server_2008::sp1
+Aggressive OS guesses: Microsoft Windows 7 (85%), Microsoft Windows Server 2008 SP1 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.0.107
+Host is up (0.0092s latency).
+Not shown: 996 filtered ports
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+8100/tcp open  xprint-server
+MAC Address: 00:C2:C6:B8:64:47 (Intel Corporate)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|phone
+Running (JUST GUESSING): Microsoft Windows Vista|2008|7|Phone (96%)
+OS CPE: cpe:/o:microsoft:windows_vista::- cpe:/o:microsoft:windows_vista::sp1 cpe:/o:microsoft:windows_server_2008::sp1 cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows cpe:/o:microsoft:windows_8
+Aggressive OS guesses: Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7 (96%), Microsoft Windows 7 Professional (95%), Microsoft Windows Vista SP2, Windows 7 SP1, or Windows Server 2008 (95%), Microsoft Windows Phone 7.5 (93%), Microsoft Windows Vista SP0 - SP1 (91%), Microsoft Windows Server 2008 SP1 (90%), Microsoft Windows Vista Home Premium SP1, Windows 7, or Windows Server 2008 (90%), Microsoft Windows 7 SP1 (89%), Microsoft Windows Server 2008 Beta 3 (87%), Microsoft Windows Server 2008 SP1 or Windows 8 (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for HONOR_V30-ad9f72bce519ebd.lan (192.168.0.114)
+Host is up (0.013s latency).
+Not shown: 998 closed ports
+PORT      STATE    SERVICE
+8082/tcp  filtered blackice-alerts
+16080/tcp open     osxwebadmin
+MAC Address: 3A:F3:96:83:C0:58 (Unknown)
+Aggressive OS guesses: Linux 2.6.32 - 3.9 (96%), Netgear DG834G WAP or Western Digital WD TV media player (96%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6) (94%), Linux 2.6.32 (93%), Infoblox Trinzic network control appliance (92%), Linux 2.6.31 (91%), Check Point VPN-1 UTM appliance (91%), Linux 2.4.26 (Slackware 10.0.0) (91%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for MIX2S-xiaomishouji.lan (192.168.0.115)
+Host is up (0.013s latency).
+Not shown: 999 closed ports
+PORT      STATE SERVICE
+16080/tcp open  osxwebadmin
+MAC Address: 9C:2E:A1:9F:6C:27 (Unknown)
+Aggressive OS guesses: Netgear DG834G WAP or Western Digital WD TV media player (96%), Linux 2.6.32 - 3.9 (95%), Infoblox Trinzic network control appliance (93%), Linux 3.1 (93%), Linux 3.2 (93%), AXIS 210A or 211 Network Camera (Linux 2.6) (92%), Android 4.0.3 - 4.0.4 (Linux 3.0) (92%), Linux 2.6.32 - 2.6.35 (92%), Linux 2.6.32 - 3.2 (92%), HP P2000 G3 NAS device (92%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for Admin-PC.lan (192.168.0.116)
+Host is up (0.0090s latency).
+Not shown: 996 filtered ports
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+8100/tcp open  xprint-server
+MAC Address: 30:B4:9E:43:20:F2 (Unknown)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|phone
+Running (JUST GUESSING): Microsoft Windows Vista|2008|7|Phone (97%)
+OS CPE: cpe:/o:microsoft:windows_vista::- cpe:/o:microsoft:windows_vista::sp1 cpe:/o:microsoft:windows_server_2008::sp1 cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows cpe:/o:microsoft:windows_8
+Aggressive OS guesses: Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7 (97%), Microsoft Windows Phone 7.5 (95%), Microsoft Windows 7 Professional (95%), Microsoft Windows Vista SP2, Windows 7 SP1, or Windows Server 2008 (95%), Microsoft Windows Server 2008 SP1 (93%), Microsoft Windows Vista Home Premium SP1, Windows 7, or Windows Server 2008 (91%), Microsoft Windows 7 SP1 (90%), Microsoft Windows Vista SP0 - SP1 (90%), Microsoft Windows 7 SP1 or Windows Server 2008 SP1 - SP2 (88%), Microsoft Windows Vista SP2 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for UniFi-CloudKey.lan (192.168.0.128)
+Host is up (0.0057s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+443/tcp  open  https
+6789/tcp open  ibm-db2-admin
+8080/tcp open  http-proxy
+8443/tcp open  https-alt
+MAC Address: B4:FB:E4:D2:A8:D1 (Unknown)
+Aggressive OS guesses: Netgear DG834G WAP or Western Digital WD TV media player (96%), Linux 2.6.32 (95%), Linux 2.6.32 - 3.9 (95%), Android 4.1.1 (95%), Linux 3.1 (93%), Linux 3.2 (93%), AXIS 210A or 211 Network Camera (Linux 2.6) (92%), Linux 2.6.32 - 2.6.35 (92%), Linux 2.6.32 - 3.2 (92%), HP P2000 G3 NAS device (92%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for PC-NickeryXu.lan (192.168.0.129)
+Host is up (0.011s latency).
+Not shown: 998 filtered ports
+PORT     STATE SERVICE
+3306/tcp open  mysql
+7070/tcp open  realserver
+MAC Address: A0:A4:C5:64:47:A9 (Unknown)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows XP|7|2008 (87%)
+OS CPE: cpe:/o:microsoft:windows_xp::sp2 cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_server_2008::sp1
+Aggressive OS guesses: Microsoft Windows XP SP2 (87%), Microsoft Windows 7 (85%), Microsoft Windows Server 2008 SP1 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for dbtdeMBP.lan (192.168.0.132)
+Host is up (0.0097s latency).
+All 1000 scanned ports on dbtdeMBP.lan (192.168.0.132) are closed
+MAC Address: 8C:85:90:82:7E:B7 (Unknown)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for b4fbe457b669.lan (192.168.0.141)
+Host is up (0.0073s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+MAC Address: B4:FB:E4:57:B6:69 (Unknown)
+Device type: general purpose
+Running: Linux 2.6.X|3.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3
+OS details: Linux 2.6.32 - 3.9
+Network Distance: 1 hop
+
+Nmap scan report for WIN-20140913YTN.lan (192.168.0.147)
+Host is up (0.0094s latency).
+Not shown: 998 filtered ports
+PORT    STATE SERVICE
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+MAC Address: 84:3A:4B:00:C4:04 (Intel Corporate)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|phone
+Running: Microsoft Windows 7|Phone|Vista|2008
+OS CPE: cpe:/o:microsoft:windows_7::-:professional cpe:/o:microsoft:windows cpe:/o:microsoft:windows_vista::- cpe:/o:microsoft:windows_vista::sp1 cpe:/o:microsoft:windows_server_2008::sp1
+OS details: Microsoft Windows 7 Professional, Microsoft Windows Phone 7.5, Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7, Microsoft Windows Vista SP2, Windows 7 SP1, or Windows Server 2008
+Network Distance: 1 hop
+
+Nmap scan report for syldeMBP.lan (192.168.0.158)
+Host is up (0.013s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+3000/tcp open  ppp
+MAC Address: 4C:32:75:8A:76:21 (Unknown)
+Device type: media device|phone|general purpose
+Running (JUST GUESSING): Apple iOS 5.X|4.X|6.X (92%), Apple Mac OS X 10.7.X|10.6.X|10.8.X (90%)
+OS CPE: cpe:/o:apple:iphone_os:5.2.1 cpe:/o:apple:iphone_os:4 cpe:/a:apple:apple_tv:4 cpe:/o:apple:iphone_os:5 cpe:/o:apple:iphone_os:6 cpe:/o:apple:mac_os_x:10.7 cpe:/o:apple:mac_os_x:10.6.5 cpe:/o:apple:mac_os_x:10.8
+Aggressive OS guesses: Apple TV (iOS 5.2.1) (92%), Apple Mac OS X 10.8.0 - 10.8.3 (Mountain Lion) or iOS 4.4.2 - 6.1.3 (Darwin 11.0.0 - 12.3.0) (90%), Apple iOS 5.0.1 (90%), Apple Mac OS X 10.7.4 - 10.7.5 (Lion) (Darwin 11.4.2) (90%), Apple Mac OS X 10.7.0 - 10.7.4 (Lion) (Darwin 11.0.0 - 11.4.0) or iOS 4.2 - 5.0.1 (90%), Apple Mac OS X 10.7.0 - 10.7.5 (Lion) (Darwin 11.0.0 - 11.4.2) (90%), Apple iOS 6.0.1 (90%), Apple iOS 5.0.1 - 5.1.1 (90%), Apple Mac OS X 10.6.5 (Snow Leopard) (Darwin 10.5.0) (89%), Apple Mac OS X 10.7.3 (Lion) (Darwin 11.3.0) or iOS 4.2 - 4.3.4 (89%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for Leis-ip7p.lan (192.168.0.162)
+Host is up (0.026s latency).
+Not shown: 999 closed ports
+PORT      STATE SERVICE
+62078/tcp open  iphone-sync
+MAC Address: 48:A1:95:4B:FA:79 (Unknown)
+Device type: media device|phone|general purpose
+Running (JUST GUESSING): Apple iOS 4.X|5.X|6.X (93%), Apple Mac OS X 10.7.X|10.8.X|10.4.X (93%)
+OS CPE: cpe:/o:apple:iphone_os:4 cpe:/a:apple:apple_tv:4 cpe:/o:apple:iphone_os:5 cpe:/o:apple:iphone_os:6 cpe:/o:apple:mac_os_x:10.7 cpe:/o:apple:mac_os_x:10.8 cpe:/o:apple:mac_os_x:10.4
+Aggressive OS guesses: Apple Mac OS X 10.8.0 - 10.8.3 (Mountain Lion) or iOS 4.4.2 - 6.1.3 (Darwin 11.0.0 - 12.3.0) (93%), Apple iOS 5.0.1 (93%), Apple Mac OS X 10.7.4 - 10.7.5 (Lion) (Darwin 11.4.2) (93%), Apple Mac OS X 10.7.0 - 10.7.4 (Lion) (Darwin 11.0.0 - 11.4.0) or iOS 4.2 - 5.0.1 (93%), Apple Mac OS X 10.7.0 - 10.7.5 (Lion) (Darwin 11.0.0 - 11.4.2) (93%), Apple iOS 6.0.1 (93%), Apple iOS 5.0.1 - 5.1.1 (93%), Apple Mac OS X 10.7.3 (Lion) (Darwin 11.3.0) or iOS 4.2 - 4.3.4 (92%), Apple iOS 6.1.2 (92%), Apple Mac OS X 10.7.3 (Lion) (Darwin 11.3.0) (92%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for MacBookPro.lan (192.168.0.163)
+Host is up (0.0095s latency).
+Not shown: 997 closed ports
+PORT    STATE SERVICE
+88/tcp  open  kerberos-sec
+445/tcp open  microsoft-ds
+548/tcp open  afp
+MAC Address: 3C:15:C2:C3:E9:34 (Unknown)
+Device type: media device
+Running: Apple iPhone OS 2.X
+OS CPE: cpe:/o:apple:iphone_os:2
+OS details: Apple iPod touch audio player (iPhone OS 2.2)
+Network Distance: 1 hop
+
+Nmap scan report for Honor_V9-16db1a36af3f8899.lan (192.168.0.170)
+Host is up (0.026s latency).
+All 1000 scanned ports on Honor_V9-16db1a36af3f8899.lan (192.168.0.170) are closed
+MAC Address: 14:5F:94:9C:7E:DF (Unknown)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for 1.lan (192.168.0.171)
+Host is up (0.046s latency).
+Not shown: 895 closed ports, 104 filtered ports
+PORT      STATE SERVICE
+62078/tcp open  iphone-sync
+MAC Address: CC:2D:B7:6F:B8:66 (Unknown)
+Aggressive OS guesses: Linksys WRV200 wireless broadband router (97%), Linux 2.6.22 (Kubuntu, x86) (97%), Linux 2.6.24 (Ubuntu 8.04) (97%), Linux 2.6.25 (openSUSE 11.0) (97%), Sun Solaris 8 (SPARC) (97%), Microsoft Windows XP SP3 (95%), Cisco Nexus 5548P switch (NX-OS 5.1) (94%), Microsoft Windows Phone 7.5 (94%), Cisco Nexus 7010 switch (NX-OS 5.1(2)) (93%), GlobespanVirata GS8100, Huawei MT880, or Solwise SAR 100 ADSL modem (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for mateki-iPhone.lan (192.168.0.174)
+Host is up (0.029s latency).
+Not shown: 819 closed ports, 180 filtered ports
+PORT      STATE SERVICE
+62078/tcp open  iphone-sync
+MAC Address: 52:2F:76:59:55:2B (Unknown)
+Device type: media device|phone|proxy server
+Running (JUST GUESSING): Apple iOS 4.X|5.X|6.X (86%), Blue Coat SGOS 6.X (85%)
+OS CPE: cpe:/o:apple:iphone_os:4 cpe:/a:apple:apple_tv:4 cpe:/o:apple:iphone_os:5 cpe:/o:apple:iphone_os:6 cpe:/o:bluecoat:sgos:6
+Aggressive OS guesses: Apple Mac OS X 10.8.0 - 10.8.3 (Mountain Lion) or iOS 4.4.2 - 6.1.3 (Darwin 11.0.0 - 12.3.0) (86%), Blue Coat proxy server (SGOS 6.3.2.201) (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for OnePlus6.lan (192.168.0.177)
+Host is up (0.014s latency).
+Not shown: 999 closed ports
+PORT      STATE    SERVICE
+49161/tcp filtered unknown
+MAC Address: 92:9E:81:CD:F4:19 (Unknown)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.0.197
+Host is up (0.012s latency).
+Not shown: 990 closed ports
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+111/tcp  open     rpcbind
+139/tcp  open     netbios-ssn
+445/tcp  open     microsoft-ds
+2049/tcp open     nfs
+3000/tcp open     ppp
+3283/tcp filtered netassistant
+3389/tcp open     ms-wbt-server
+8082/tcp open     blackice-alerts
+9101/tcp filtered jetdirect
+MAC Address: 00:C2:C6:E4:5D:EA (Intel Corporate)
+Aggressive OS guesses: Linux 2.6.32 - 3.9 (96%), Netgear DG834G WAP or Western Digital WD TV media player (96%), Linux 2.6.32 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6) (94%), Linux 2.6.32 - 2.6.35 (94%), Linux 2.6.32 - 3.2 (94%), Linux 3.0 - 3.9 (93%), Linux 3.0 - 3.1 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.0.77
+Host is up (0.000072s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+53/tcp   open  domain
+111/tcp  open  rpcbind
+3306/tcp open  mysql
+Device type: general purpose
+Running: Linux 3.X
+OS CPE: cpe:/o:linux:linux_kernel:3
+OS details: Linux 3.7 - 3.9
+Network Distance: 0 hops
+
+OS detection performed. Please report any incorrect results at http://nmap.org/submit/ .
+Nmap done: 256 IP addresses (38 hosts up) scanned in 1857.88 seconds
+
