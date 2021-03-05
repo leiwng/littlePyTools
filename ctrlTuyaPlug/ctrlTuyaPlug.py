@@ -27,8 +27,8 @@ import psutil
 import winsound
 import win32api, win32con
 
-BAT_LCL = 25
-BAT_UCL = 85
+BAT_LCL = 35
+BAT_UCL = 75
 
 # 从云开发项目获得的授权密钥
 client_id = 'hmrjarqradeiou76xm51'
