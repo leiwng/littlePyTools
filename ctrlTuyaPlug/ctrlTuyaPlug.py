@@ -27,6 +27,11 @@ import psutil
 import winsound
 import win32api, win32con
 
+import logging
+
+#from icecream import ic
+from datetime import datetime
+
 BAT_LCL = 35
 BAT_UCL = 75
 
@@ -40,6 +45,24 @@ product_id = 'vrwtvl200jaeeujr'
 
 base = 'https://openapi.tuyacn.com'
 url = '/v1.0/devices/'+device_id+'/commands'
+
+
+LOG_FORMAT = "%(asctime)s - %(levelname)s - %(message)s"
+logging.basicConfig(filename='ctrlTuyaPlug.log', level=logging.INFO, format=LOG_FORMAT)
+
+# time format for icecream
+def time_format():
+  return f'{datetime.now()}|> '
+
+
+# config output func for icecream
+def logging_info(s):
+  logging.info(s)
+
+
+# config prefix for icecream
+# ic.configureOutput(prefix=time_format, includeContext=True, outputFunction=logging_info)
+
 
 # 签名算法函数
 def calc_sign(msg,key):
@@ -108,8 +131,12 @@ if __name__ == "__main__":
     body = { "commands": [{"code":"switch_1", "value": True}] }
     res = get_token()
     POST(res, {}, body)
+    logging.info('Power_ON')
 
   if plugged and (percent > BAT_UCL):
     body = { "commands": [{"code":"switch_1", "value": False}] }
     res = get_token()
     POST(res, {}, body)
+    logging.info('Power_OFF')
+
+  logging.info('DO_NOTHING')
