@@ -23,7 +23,7 @@ deactivate
 ## 在Windows下布置周期性任务
 
 ```shell
-schtasks.exe /create /sc minute /mo 10 /tn "自动断电防过充" /tr "D:\Prj\littlePyTools\dist\ctrlTuyaPlug.exe"
+schtasks.exe /create /sc minute /mo 10 /tn "断电防过" /tr "D:\Prj\littlePyTools\dist\ctrlTuyaPlug.exe"
 ```
 
 说明：

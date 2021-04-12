@@ -128,15 +128,40 @@ if __name__ == "__main__":
   percent = battery.percent
 
   if (not plugged) and (percent < BAT_LCL):
-    body = { "commands": [{"code":"switch_1", "value": True}] }
-    res = get_token()
-    POST(res, {}, body)
-    logging.info('Power_ON')
+    cnt = 0 # try 3 times
+    while (cnt<3) and (not plugged) and (percent < BAT_LCL):
+      body = { "commands": [{"code":"switch_1", "value": True}] }
+      res = get_token()
+      POST(res, {}, body)
+      logging.info('Power_ON - 电量：'+str(percent)+' %')
 
-  if plugged and (percent > BAT_UCL):
-    body = { "commands": [{"code":"switch_1", "value": False}] }
-    res = get_token()
-    POST(res, {}, body)
-    logging.info('Power_OFF')
+      # get battery status again
+      battery = psutil.sensors_battery()
+      plugged = battery.power_plugged
+      percent = battery.percent
 
-  logging.info('DO_NOTHING')
+      cnt += 1
+      time.sleep(3)
+
+  elif plugged and (percent > BAT_UCL):
+    cnt = 0
+    while (cnt<3) and plugged and (percent > BAT_UCL):
+      body = { "commands": [{"code":"switch_1", "value": False}] }
+      res = get_token()
+      POST(res, {}, body)
+      logging.info('Power_OFF - 电量：'+str(percent)+' %')
+
+      # get battery status again
+      battery = psutil.sensors_battery()
+      plugged = battery.power_plugged
+      percent = battery.percent
+
+      cnt += 1
+      time.sleep(3)
+
+  else:
+    if plugged:
+      tmp_str = '通电状态'
+    else:
+      tmp_str = '断电状态'
+    logging.info('DO_NOTHING - 电量：'+str(percent)+' %'+' - '+tmp_str)
